@@ -1,6 +1,7 @@
 import { createServer } from "@/lib/supabase/server";
 import Link from "next/link";
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
 
 export default async function HomePage() {
   const supabase = await createServer();
@@ -17,22 +18,22 @@ export default async function HomePage() {
   return (
     <div className="min-h-screen bg-white dark:bg-zinc-950">
       {/* Navigation Bar */}
-      <nav className="border-b border-zinc-200 dark:border-zinc-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">
-            My Portfolio
-          </h1>
-          <Link
-            href="/admin"
-            className="text-sm text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
-          >
-            Admin
-          </Link>
-        </div>
-      </nav>
+      <Navbar />
 
-      {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      {/* Title */}
+      <div className="w-full min-h-screen px-15 text-left  flex items-center justify-center">
+        <div>
+          <h1 className="font-rampart-one text-9xl font-extrabold tracking-wide text-black dark:text-white">
+            FILIPPO
+          </h1>
+          <h1 className="font-rampart-one text-9xl font-extrabold tracking-wide text-black dark:text-white">
+            NOVARINI
+          </h1>
+        </div>
+      </div>
+
+      {/* Projects */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {!projects || projects.length === 0 ? (
           <div className="text-center py-12">
             <p className="text-zinc-500 dark:text-zinc-400">
@@ -86,7 +87,7 @@ export default async function HomePage() {
             ))}
           </div>
         )}
-      </main>
+      </div>
     </div>
   );
 }
