@@ -22,7 +22,7 @@ export default async function HomePage() {
       <Navbar />
 
       {/* Title */}
-      <div className="w-full min-h-screen px-15 text-left  flex items-center justify-center">
+      <div id="title" className="w-full min-h-screen px-15 text-left  flex items-center justify-center scroll-mt-24">
         <div>
           <h1 className="font-rampart-one text-9xl font-extrabold tracking-wide text-black dark:text-white">
             FILIPPO
@@ -34,7 +34,7 @@ export default async function HomePage() {
       </div>
 
       {/* About Me */}
-      <section className="w-full py-16">
+      <section id="about" className="w-full py-16 scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid gap-10 md:grid-cols-2 items-center">
             {/* Image placeholder */}
@@ -72,7 +72,7 @@ export default async function HomePage() {
       </section>
 
       {/* Projects */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div id="projects" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 scroll-mt-24">
         {!projects || projects.length === 0 ? (
           <div className="text-center py-12">
             <p className="text-zinc-500 dark:text-zinc-400">

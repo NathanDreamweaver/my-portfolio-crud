@@ -8,7 +8,7 @@ export default function Navbar() {
                     <ul className="flex items-center justify-center gap-4">
                         <li>
                             <Link
-                                href="/"
+                                href="/#title"
                                 className="text-sm font-medium text-gray-800 hover:text-fuchsia-500 hover:bg-gray-400/10 p-2 rounded-xl border-2 border-fuchsia-500/0 hover:border-fuchsia-500/80"
                             >
                                 Home
