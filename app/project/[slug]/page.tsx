@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default async function ProjectPage({
     params,
@@ -103,6 +104,7 @@ export default async function ProjectPage({
                     </Link>
                 </div>
             </main>
+            <Footer />
         </div>
     );
 }

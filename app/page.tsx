@@ -2,6 +2,7 @@ import { createServer } from "@/lib/supabase/server";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default async function HomePage() {
   const supabase = await createServer();
@@ -21,7 +22,7 @@ export default async function HomePage() {
       <Navbar />
 
       {/* Title */}
-      <div className="w-full min-h-screen px-15 text-left  flex items-center justify-center">
+      <div id="title" className="w-full min-h-screen px-15 text-left  flex items-center justify-center scroll-mt-24">
         <div>
           <h1 className="font-rampart-one text-9xl font-extrabold tracking-wide text-black dark:text-white">
             FILIPPO
@@ -32,8 +33,46 @@ export default async function HomePage() {
         </div>
       </div>
 
+      {/* About Me */}
+      <section id="about" className="w-full py-16 scroll-mt-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-10 md:grid-cols-2 items-center">
+            {/* Image placeholder */}
+            <div className="relative w-full h-64 sm:h-80 lg:h-96 rounded-lg border border-zinc-200 dark:border-zinc-800 overflow-hidden bg-zinc-100 dark:bg-zinc-900">
+              <Image
+                src="https://placehold.co/600x400?text=Placeholder+Image"
+                alt="Placeholder Image"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover"
+                priority
+              />
+            </div>
+
+            {/* Text*/}
+            <div>
+              <h2 className="text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">
+                About Me
+              </h2>
+              <p className="mt-4 text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                vel pulvinar lorem. Integer interdum, nibh id molestie luctus, arcu
+                mi volutpat augue, vel posuere augue libero id ex. Maecenas sit amet
+                nisi posuere, placerat lacus id, facilisis arcu.
+              </p>
+              <p className="mt-4 text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae vitae
+                dicta sunt explicabo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Projects */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div id="projects" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 scroll-mt-24">
         {!projects || projects.length === 0 ? (
           <div className="text-center py-12">
             <p className="text-zinc-500 dark:text-zinc-400">
@@ -88,6 +127,7 @@ export default async function HomePage() {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 }
