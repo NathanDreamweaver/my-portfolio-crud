@@ -60,7 +60,7 @@ export default async function ProjectPage({
                                 {project.tags.map((tag: string) => (
                                     <span
                                         key={tag}
-                                        className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200"
+                                        className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-fuchsia-100 text-fuchsia-800 dark:bg-fuchsia-900 dark:text-fuchsia-200"
                                     >
                                         {tag}
                                     </span>
@@ -98,7 +98,7 @@ export default async function ProjectPage({
                 <div className="mt-12 pt-8 border-t border-zinc-200 dark:border-zinc-800">
                     <Link
                         href="/"
-                        className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+                        className="text-fuchsia-600 hover:text-fuchsia-700 dark:text-fuchsia-400 dark:hover:text-fuchsia-300"
                     >
                         ← Back to all projects
                     </Link>
