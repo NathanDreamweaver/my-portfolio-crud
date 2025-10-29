@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
     return (
-        <nav className="fixed top-4 inset-x-0 z-50">
+        <nav className="sticky top-4 z-50">
             <div className="max-w-3xl mx-auto px-4">
                 <nav className="rounded-xl shadow-md border border-zinc-200 dark:border-zinc-800 px-4 sm:px-6 py-3 backdrop-blur-sm bg-white/70 dark:bg-zinc-900/70">
                     <ul className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 sm:gap-4">
