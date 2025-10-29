@@ -4,12 +4,12 @@ export default function Navbar() {
     return (
         <nav className="fixed top-4 inset-x-0 z-50">
             <div className="max-w-3xl mx-auto px-4">
-                <nav className="bg-white/40 rounded-xl shadow-md border-4 border-white/60 px-4 sm:px-6 py-3 backdrop-blur-sm">
+                <nav className="rounded-xl shadow-md border border-zinc-200 dark:border-zinc-800 px-4 sm:px-6 py-3 backdrop-blur-sm bg-white/70 dark:bg-zinc-900/70">
                     <ul className="flex items-center justify-center gap-4">
                         <li>
                             <Link
                                 href="/#title"
-                                className="text-sm font-medium text-gray-800 hover:text-fuchsia-500 hover:bg-gray-400/10 p-2 rounded-xl border-2 border-fuchsia-500/0 hover:border-fuchsia-500/80"
+                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors"
                             >
                                 Home
                             </Link>
@@ -17,7 +17,7 @@ export default function Navbar() {
                         <li>
                             <Link
                                 href="/#about"
-                                className="text-sm text-gray-800 hover:text-fuchsia-500 hover:bg-gray-400/10 p-2 rounded-xl border-2 border-fuchsia-500/0 hover:border-fuchsia-500/80"
+                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors"
                             >
                                 About
                             </Link>
@@ -25,7 +25,7 @@ export default function Navbar() {
                         <li>
                             <Link
                                 href="/#projects"
-                                className="text-sm text-gray-800 hover:text-fuchsia-500 hover:bg-gray-400/10 p-2 rounded-xl border-2 border-fuchsia-500/0 hover:border-fuchsia-500/80"
+                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors"
                             >
                                 Projects
                             </Link>
@@ -33,7 +33,7 @@ export default function Navbar() {
                         <li>
                             <Link
                                 href="/#contact"
-                                className="text-sm text-gray-800 hover:text-fuchsia-500 hover:bg-gray-400/10 p-2 rounded-xl border-2 border-fuchsia-500/0 hover:border-fuchsia-500/80"
+                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors"
                             >
                                 Contact
                             </Link>
@@ -41,7 +41,7 @@ export default function Navbar() {
                         <li>
                             <Link
                                 href="/admin"
-                                className="text-sm text-gray-800 hover:text-fuchsia-500 hover:bg-gray-400/10 p-2 rounded-xl border-2 border-fuchsia-500/0 hover:border-fuchsia-500/80"
+                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors"
                             >
                                 Admin
                             </Link>
