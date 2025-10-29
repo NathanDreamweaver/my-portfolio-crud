@@ -9,7 +9,7 @@ export default function Navbar() {
                         <li>
                             <Link
                                 href="/#title"
-                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors"
+                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-fuchsia-600 dark:hover:text-fuchsia-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors"
                             >
                                 Home
                             </Link>
@@ -17,7 +17,7 @@ export default function Navbar() {
                         <li>
                             <Link
                                 href="/#about"
-                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors"
+                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-fuchsia-600 dark:hover:text-fuchsia-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors"
                             >
                                 About
                             </Link>
@@ -25,7 +25,7 @@ export default function Navbar() {
                         <li>
                             <Link
                                 href="/#projects"
-                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors"
+                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-fuchsia-600 dark:hover:text-fuchsia-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors"
                             >
                                 Projects
                             </Link>
@@ -33,7 +33,7 @@ export default function Navbar() {
                         <li>
                             <Link
                                 href="/#contact"
-                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors"
+                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-fuchsia-600 dark:hover:text-fuchsia-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors"
                             >
                                 Contact
                             </Link>
@@ -41,7 +41,7 @@ export default function Navbar() {
                         <li>
                             <Link
                                 href="/admin"
-                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors"
+                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-fuchsia-600 dark:hover:text-fuchsia-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors"
                             >
                                 Admin
                             </Link>

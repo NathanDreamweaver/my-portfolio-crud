@@ -17,7 +17,7 @@ export default async function AdminPage() {
                 </h1>
                 <Link
                     href="/admin/projects/new"
-                    className="mt-4 sm:mt-0 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700"
+                    className="mt-4 sm:mt-0 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-fuchsia-700"
                 >
                     Create New Project
                 </Link>

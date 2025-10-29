@@ -100,7 +100,7 @@ export default async function HomePage() {
                     </div>
                   )}
                   <div className="p-6">
-                    <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-fuchsia-600 dark:group-hover:text-fuchsia-400 transition-colors">
                       {project.title}
                     </h2>
                     {project.summary && (
@@ -113,7 +113,7 @@ export default async function HomePage() {
                         {project.tags.map((tag: string) => (
                           <span
                             key={tag}
-                            className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200"
+                            className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-fuchsia-100 text-fuchsia-800 dark:bg-fuchsia-900 dark:text-fuchsia-200"
                           >
                             {tag}
                           </span>
