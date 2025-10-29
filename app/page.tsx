@@ -22,7 +22,7 @@ export default async function HomePage() {
       <Navbar />
 
       {/* Title */}
-      <div id="title" className="w-full min-h-screen px-15 text-left  flex items-center justify-center scroll-mt-24">
+      <div id="title" className="w-full min-h-screen px-15 text-left  flex items-center justify-center scroll-mt-24 overflow-hidden">
         <div>
           <h1 className="font-rampart-one text-9xl font-extrabold tracking-wide text-black dark:text-white">
             FILIPPO
