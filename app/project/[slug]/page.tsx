@@ -51,7 +51,7 @@ export default async function ProjectPage({
                     )}
 
                     <header className="mb-8">
-                        <h1 className="text-4xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl leading-tight font-bold text-zinc-900 dark:text-zinc-100 mb-4">
                             {project.title}
                         </h1>
 

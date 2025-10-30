@@ -24,10 +24,10 @@ export default async function HomePage() {
       {/* Title */}
       <div id="title" className="w-full min-h-screen px-15 text-left  flex items-center justify-center scroll-mt-24 overflow-hidden">
         <div>
-          <h1 className="font-rampart-one text-9xl font-extrabold tracking-wide text-black dark:text-white">
+          <h1 className="font-rampart-one text-5xl sm:text-6xl md:text-8xl lg:text-9xl leading-none font-extrabold tracking-wide text-black dark:text-white">
             FILIPPO
           </h1>
-          <h1 className="font-rampart-one text-9xl font-extrabold tracking-wide text-black dark:text-white">
+          <h1 className="font-rampart-one text-5xl sm:text-6xl md:text-8xl lg:text-9xl leading-none font-extrabold tracking-wide text-black dark:text-white">
             NOVARINI
           </h1>
         </div>
