@@ -28,7 +28,7 @@ export default async function ProjectPage({
             <Navbar />
 
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <article>
+                <article className="border-4 border-black rounded-2xl shadow-[10px_10px_0_0_#000] bg-white dark:bg-zinc-900 p-6 sm:p-8">
                     {project.is_hidden && (
                         <div className="mb-4 p-3 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded">
                             <p className="text-sm text-red-800 dark:text-red-200">
@@ -38,7 +38,7 @@ export default async function ProjectPage({
                     )}
 
                     {project.cover_url && (
-                        <div className="relative w-full h-96 rounded-lg mb-8 overflow-hidden">
+                        <div className="relative w-full h-96 rounded-2xl mb-8 overflow-hidden border-4 border-black shadow-[8px_8px_0_0_#000]">
                             <Image
                                 src={project.cover_url}
                                 alt={project.title}
@@ -51,16 +51,16 @@ export default async function ProjectPage({
                     )}
 
                     <header className="mb-8">
-                        <h1 className="text-4xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl leading-tight font-bold text-zinc-900 dark:text-zinc-100 mb-4">
                             {project.title}
                         </h1>
 
                         {project.tags && project.tags.length > 0 && (
-                            <div className="flex flex-wrap gap-2 mb-4">
+                            <div className="flex flex-wrap gap-3 mb-4">
                                 {project.tags.map((tag: string) => (
                                     <span
                                         key={tag}
-                                        className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-fuchsia-100 text-fuchsia-800 dark:bg-fuchsia-900 dark:text-fuchsia-200"
+                                        className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-fuchsia-100 text-fuchsia-800 dark:bg-fuchsia-900 dark:text-fuchsia-200 border-2 border-black shadow-[3px_3px_0_0_#000]"
                                     >
                                         {tag}
                                     </span>
@@ -95,10 +95,10 @@ export default async function ProjectPage({
                     )}
                 </article>
 
-                <div className="mt-12 pt-8 border-t border-zinc-200 dark:border-zinc-800">
+                <div className="mt-12 pt-8 border-t-4 border-black">
                     <Link
                         href="/"
-                        className="text-fuchsia-600 hover:text-fuchsia-700 dark:text-fuchsia-400 dark:hover:text-fuchsia-300"
+                        className="text-fuchsia-600 hover:text-fuchsia-700 dark:text-fuchsia-400 dark:hover:text-fuchsia-300 border-2 border-black px-3 py-1 rounded-full shadow-[4px_4px_0_0_#000]"
                     >
                         ← Back to all projects
                     </Link>

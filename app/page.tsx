@@ -22,12 +22,12 @@ export default async function HomePage() {
       <Navbar />
 
       {/* Title */}
-      <div id="title" className="w-full min-h-screen px-15 text-left  flex items-center justify-center scroll-mt-24 overflow-hidden">
-        <div>
-          <h1 className="font-rampart-one text-9xl font-extrabold tracking-wide text-black dark:text-white">
+      <div id="title" className="w-full min-h-screen px-15 text-left flex items-center justify-center scroll-mt-24 overflow-hidden">
+        <div className="px-6 py-4 border-4 border-black rounded-2xl shadow-[10px_10px_0_0_#000] bg-white/80 dark:bg-zinc-900/80">
+          <h1 className="font-rampart-one text-5xl sm:text-6xl md:text-8xl lg:text-9xl leading-none font-extrabold tracking-wide text-black dark:text-white">
             FILIPPO
           </h1>
-          <h1 className="font-rampart-one text-9xl font-extrabold tracking-wide text-black dark:text-white">
+          <h1 className="font-rampart-one text-5xl sm:text-6xl md:text-8xl lg:text-9xl leading-none font-extrabold tracking-wide text-black dark:text-white">
             NOVARINI
           </h1>
         </div>
@@ -38,7 +38,7 @@ export default async function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid gap-10 md:grid-cols-2 items-center">
             {/* Image placeholder */}
-            <div className="relative w-full h-64 sm:h-80 lg:h-96 rounded-lg border border-zinc-200 dark:border-zinc-800 overflow-hidden bg-zinc-100 dark:bg-zinc-900">
+            <div className="relative w-full h-64 sm:h-80 lg:h-96 rounded-2xl border-4 border-black overflow-hidden bg-zinc-100 dark:bg-zinc-900 shadow-[8px_8px_0_0_#000]">
               <Image
                 src="https://placehold.co/600x400?text=Placeholder+Image"
                 alt="Placeholder Image"
@@ -80,16 +80,16 @@ export default async function HomePage() {
             </p>
           </div>
         ) : (
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project) => (
               <Link
                 key={project.id}
                 href={`/project/${project.slug}`}
                 className="group block"
               >
-                <article className="border border-zinc-200 dark:border-zinc-800 rounded-lg overflow-hidden bg-white dark:bg-zinc-900 shadow-sm hover:shadow-md transition-shadow">
+                <article className="rounded-2xl overflow-hidden bg-white dark:bg-zinc-900 border-4 border-black shadow-[8px_8px_0_0_#000] group-hover:shadow-[12px_12px_0_0_#000] transition-shadow">
                   {project.cover_url && (
-                    <div className="relative w-full h-48">
+                    <div className="relative w-full h-48 border-b-4 border-black">
                       <Image
                         src={project.cover_url}
                         alt={project.title}
@@ -109,11 +109,11 @@ export default async function HomePage() {
                       </p>
                     )}
                     {project.tags && project.tags.length > 0 && (
-                      <div className="mt-3 flex flex-wrap gap-2">
+                      <div className="mt-4 flex flex-wrap gap-3">
                         {project.tags.map((tag: string) => (
                           <span
                             key={tag}
-                            className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-fuchsia-100 text-fuchsia-800 dark:bg-fuchsia-900 dark:text-fuchsia-200"
+                            className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-fuchsia-100 text-fuchsia-800 dark:bg-fuchsia-900 dark:text-fuchsia-200 border-2 border-black shadow-[3px_3px_0_0_#000]"
                           >
                             {tag}
                           </span>
