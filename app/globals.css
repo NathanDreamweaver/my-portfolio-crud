@@ -25,7 +25,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Utility class for Rampart One font (loaded via next/font in layout) */
+
 .font-rampart-one {
   font-family: var(--font-rampart-one), Arial, Helvetica, sans-serif;
 }
