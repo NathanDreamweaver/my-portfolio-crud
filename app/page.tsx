@@ -17,9 +17,14 @@ export default async function HomePage() {
   if (error) console.error(error);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-zinc-950">
-      {/* Navigation Bar */}
-      <Navbar />
+    <div className="min-h-screen bg-linear-to-br from-purple-50 via-fuchsia-50 to-violet-50 dark:bg-linear-to-br dark:from-purple-950 dark:via-fuchsia-950 dark:to-violet-950 relative">
+      {/* Grid Background */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#a855f73d_2px,transparent_2px),linear-gradient(to_bottom,#a855f73d_2px,transparent_2px)] bg-size-[48px_48px] mask-[radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
+      
+      {/* Content */}
+      <div className="relative z-10">
+        {/* Navigation Bar */}
+        <Navbar />
 
       {/* Title */}
       <div id="title" className="w-full min-h-screen px-15 text-left flex items-center justify-center scroll-mt-24 overflow-hidden">
@@ -128,6 +133,7 @@ export default async function HomePage() {
         )}
       </div>
       <Footer />
+      </div>
     </div>
   );
 }

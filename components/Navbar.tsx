@@ -9,7 +9,7 @@ export default function Navbar() {
                         <li>
                             <Link
                                 href="/#title"
-                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-fuchsia-600 dark:hover:text-fuchsia-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors border-2 border-black/0 hover:border-black bg-white/60 dark:bg-zinc-900/60 shadow-[4px_4px_0_0_#000]/0 hover:shadow-[4px_4px_0_0_#000]"
+                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-fuchsia-600 dark:hover:text-fuchsia-400 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/80 px-3 py-2 rounded-lg transition-colors border-2 border-black/0 hover:border-black shadow-[4px_4px_0_0_#000]/0 hover:shadow-[4px_4px_0_0_#000]"
                             >
                                 Home
                             </Link>
@@ -17,7 +17,7 @@ export default function Navbar() {
                         <li>
                             <Link
                                 href="/#about"
-                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-fuchsia-600 dark:hover:text-fuchsia-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors border-2 border-black/0 hover:border-black bg-white/60 dark:bg-zinc-900/60 shadow-[4px_4px_0_0_#000]/0 hover:shadow-[4px_4px_0_0_#000]"
+                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-fuchsia-600 dark:hover:text-fuchsia-400 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/80 px-3 py-2 rounded-lg transition-colors border-2 border-black/0 hover:border-black shadow-[4px_4px_0_0_#000]/0 hover:shadow-[4px_4px_0_0_#000]"
                             >
                                 About
                             </Link>
@@ -25,7 +25,7 @@ export default function Navbar() {
                         <li>
                             <Link
                                 href="/#projects"
-                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-fuchsia-600 dark:hover:text-fuchsia-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors border-2 border-black/0 hover:border-black bg-white/60 dark:bg-zinc-900/60 shadow-[4px_4px_0_0_#000]/0 hover:shadow-[4px_4px_0_0_#000]"
+                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-fuchsia-600 dark:hover:text-fuchsia-400 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/80 px-3 py-2 rounded-lg transition-colors border-2 border-black/0 hover:border-black shadow-[4px_4px_0_0_#000]/0 hover:shadow-[4px_4px_0_0_#000]"
                             >
                                 Projects
                             </Link>
@@ -33,7 +33,7 @@ export default function Navbar() {
                         <li>
                             <Link
                                 href="/#contact"
-                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-fuchsia-600 dark:hover:text-fuchsia-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors border-2 border-black/0 hover:border-black bg-white/60 dark:bg-zinc-900/60 shadow-[4px_4px_0_0_#000]/0 hover:shadow-[4px_4px_0_0_#000]"
+                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-fuchsia-600 dark:hover:text-fuchsia-400 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/80 px-3 py-2 rounded-lg transition-colors border-2 border-black/0 hover:border-black shadow-[4px_4px_0_0_#000]/0 hover:shadow-[4px_4px_0_0_#000]"
                             >
                                 Contact
                             </Link>
@@ -41,7 +41,7 @@ export default function Navbar() {
                         <li>
                             <Link
                                 href="/admin"
-                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-fuchsia-600 dark:hover:text-fuchsia-400 hover:bg-zinc-100/60 dark:hover:bg-zinc-800/60 px-3 py-2 rounded-lg transition-colors border-2 border-black/0 hover:border-black bg-white/60 dark:bg-zinc-900/60 shadow-[4px_4px_0_0_#000]/0 hover:shadow-[4px_4px_0_0_#000]"
+                                className="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-fuchsia-600 dark:hover:text-fuchsia-400 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/80 px-3 py-2 rounded-lg transition-colors border-2 border-black/0 hover:border-black shadow-[4px_4px_0_0_#000]/0 hover:shadow-[4px_4px_0_0_#000]"
                             >
                                 Admin
                             </Link>
