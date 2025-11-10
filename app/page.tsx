@@ -56,7 +56,7 @@ export default async function HomePage() {
 
             {/* Text*/}
             <div>
-              <h2 className="text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">
+              <h2 className="text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 underline decoration-wavy decoration-4 decoration-fuchsia-500">
                 About Me
               </h2>
               <p className="mt-4 text-zinc-600 dark:text-zinc-400 leading-relaxed">
