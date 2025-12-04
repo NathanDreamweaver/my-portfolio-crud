@@ -1,10 +1,15 @@
 import Link from "next/link";
+import { requireAuth } from "@/lib/supabase/auth";
+import { logout } from "@/app/actions/auth";
 
-export default function AdminLayout({
+export default async function AdminLayout({
     children,
-}: {
+}: Readonly<{
     children: React.ReactNode;
-}) {
+}>) {
+    // This will redirect to /login if not authenticated
+    const user = await requireAuth();
+
     return (
         <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950">
             <nav className="bg-white dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-800">
@@ -29,6 +34,19 @@ export default function AdminLayout({
                             >
                                 + New Project
                             </Link>
+                        </div>
+                        <div className="flex items-center space-x-4">
+                            <span className="text-sm text-zinc-600 dark:text-zinc-400">
+                                {user.email}
+                            </span>
+                            <form action={logout}>
+                                <button
+                                    type="submit"
+                                    className="text-sm text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                                >
+                                    Logout
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
