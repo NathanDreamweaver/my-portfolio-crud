@@ -48,6 +48,15 @@ export async function getAllProjects(): Promise<Project[]> {
 export async function createProject(formData: FormData) {
     const supabase = await createServer();
 
+    const {
+        data: { user },
+        error: authError,
+    } = await supabase.auth.getUser();
+
+    if (authError || !user) {
+        throw new Error("Unauthorized");
+    }
+
     // Extract form data
     const title = formData.get("title") as string;
     const summary = formData.get("summary") as string;
@@ -95,6 +104,15 @@ export async function createProject(formData: FormData) {
 // UPDATE
 export async function updateProject(id: string, formData: FormData) {
     const supabase = await createServer();
+
+    const {
+        data: { user },
+        error: authError,
+    } = await supabase.auth.getUser();
+
+    if (authError || !user) {
+        throw new Error("Unauthorized");
+    }
 
     const title = formData.get("title") as string;
     const summary = formData.get("summary") as string;
@@ -160,6 +178,15 @@ export async function getProject(id: string): Promise<Project | null> {
 export async function deleteProject(id: string) {
     const supabase = await createServer();
 
+    const {
+        data: { user },
+        error: authError,
+    } = await supabase.auth.getUser();
+
+    if (authError || !user) {
+        throw new Error("Unauthorized");
+    }
+
     const { error } = await supabase.from("projects").delete().eq("id", id);
 
     if (error) {
@@ -174,6 +201,15 @@ export async function deleteProject(id: string) {
 // TOGGLE HIDDEN
 export async function toggleHidden(id: string, currentState: boolean) {
     const supabase = await createServer();
+
+    const {
+        data: { user },
+        error: authError,
+    } = await supabase.auth.getUser();
+
+    if (authError || !user) {
+        throw new Error("Unauthorized");
+    }
 
     const { error } = await supabase
         .from("projects")
