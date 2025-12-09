@@ -42,40 +42,46 @@ export default async function LoginPage({
                     )}
 
                     <form action={login} className="space-y-6">
-                        <div>
-                            <label
-                                htmlFor="email"
-                                className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2"
-                            >
-                                Email address
-                            </label>
+                        <div className="relative">
                             <input
                                 id="email"
                                 name="email"
                                 type="email"
                                 autoComplete="email"
                                 required
-                                className="w-full px-3 py-2 border border-zinc-300 dark:border-zinc-700 rounded-md shadow-sm bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                placeholder="you@example.com"
+                                className="peer w-full px-3 py-3 border border-zinc-300 dark:border-zinc-700 rounded-md shadow-sm bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-transparent"
+                                placeholder="Email address"
                             />
+                            <label
+                                htmlFor="email"
+                                className="absolute left-3 -top-2 bg-white dark:bg-zinc-900 px-1 text-xs text-zinc-500 dark:text-zinc-400 transition-all duration-150 ease-out
+                                           peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-400 dark:peer-placeholder-shown:text-zinc-500
+                                           peer-focus:-top-2 peer-focus:text-xs peer-focus:text-blue-600 dark:peer-focus:text-blue-400
+                                           peer-autofill:-top-2 peer-autofill:text-xs peer-autofill:text-blue-600 dark:peer-autofill:text-blue-400"
+                            >
+                                Email address
+                            </label>
                         </div>
 
-                        <div>
-                            <label
-                                htmlFor="password"
-                                className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2"
-                            >
-                                Password
-                            </label>
+                        <div className="relative">
                             <input
                                 id="password"
                                 name="password"
                                 type="password"
                                 autoComplete="current-password"
                                 required
-                                className="w-full px-3 py-2 border border-zinc-300 dark:border-zinc-700 rounded-md shadow-sm bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                placeholder="••••••••"
+                                className="peer w-full px-3 py-3 border border-zinc-300 dark:border-zinc-700 rounded-md shadow-sm bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-transparent autofill:bg-transparent autofill:shadow-[inset_0_0_0px_1000px_theme(colors.white)] dark:autofill:shadow-[inset_0_0_0px_1000px_theme(colors.zinc.800)]"
+                                placeholder="Password"
                             />
+                            <label
+                                htmlFor="password"
+                                className="absolute left-3 -top-2 bg-white dark:bg-zinc-900 px-1 text-xs text-zinc-500 dark:text-zinc-400 transition-all duration-150 ease-out
+                                           peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-400 dark:peer-placeholder-shown:text-zinc-500
+                                           peer-focus:-top-2 peer-focus:text-xs peer-focus:text-blue-600 dark:peer-focus:text-blue-400
+                                           peer-autofill:-top-2 peer-autofill:text-xs peer-autofill:text-blue-600 dark:peer-autofill:text-blue-400"
+                            >
+                                Password
+                            </label>
                         </div>
 
                         <button
